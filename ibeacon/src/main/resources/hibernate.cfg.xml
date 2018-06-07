@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/ibeacon</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <mapping class="com.nuc.lg.ibeacon.entity.AttractionsEntity"/>
+      <mapping class="com.nuc.lg.ibeacon.entity.IbeaconEntity"/>
+      <mapping class="com.nuc.lg.ibeacon.entity.TicketEntity"/>
+      <mapping class="com.nuc.lg.ibeacon.entity.PeopleEntity"/>
+      <mapping class="com.nuc.lg.ibeacon.entity.SouvenirEntity"/>
+      <mapping class="com.nuc.lg.ibeacon.entity.AttractionEntity"/>
+      <mapping class="com.nuc.lg.ibeacon.entity.RoomEntity"/>
+      <mapping class="com.nuc.lg.ibeacon.entity.AdminEntity"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
